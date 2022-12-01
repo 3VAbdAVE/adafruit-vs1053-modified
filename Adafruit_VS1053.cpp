@@ -33,7 +33,7 @@ SIGNAL(TIMER0_COMPA_vect) {
 
 volatile boolean feedBufferLock = false;
 
-static void feeder(void) {
+static void IRAM_ATTR feeder(void) {
   myself->feedBuffer();
 }
 
